@@ -1,8 +1,15 @@
-// import css from "./friendList.modules.css";
-import friendData from "./../../input-data/friendData.json";
+import { FriendListItem } from "../friendListItem/FriendListItem";
+import css from "./friendList.module.css";
 
-import { FriendListIItem } from "../friendListItem/FriendListItem";
-
-export const FriendList = () => {
-  return <FriendListIItem friendData={friendData} />;
+export const FriendList = ({ friendData }) => {
+  console.log(friendData);
+  return (
+    <ul className={css.friendList}>
+      {friendData.map((friend) => (
+        <li key={friend.id}>
+          <FriendListItem {...friend} />
+        </li>
+      ))}
+    </ul>
+  );
 };
