@@ -1,8 +1,11 @@
-import Profile from "./components/Profile";
+import { Profile } from "./components/profile/Profile";
+import userData from "./input-data/userData.json";
 import "./App.css";
 
-function App() {
-  return <Profile />;
-}
-
-export default App;
+export const App = () => {
+  return (
+    <>
+      <Profile userData={userData} />
+    </>
+  );
+};
