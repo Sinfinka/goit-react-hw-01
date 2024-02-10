@@ -1,0 +1,32 @@
+.conteiner {
+  margin: 0 auto;
+  width: 412px;
+  background-color: var(--fone-color);
+}
+
+.conteiner,
+.conteiner th,
+.conteiner td {
+  border: 1px solid black;
+  text-transform: capitalize;
+}
+
+.conteiner th,
+.conteiner td {
+  padding: 4px 20px;
+}
+
+.conteiner thead {
+  color: var(--fone-color);
+  background-color: var(--avatar-color);
+}
+
+.conteiner table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.conteiner tbody tr:nth-child(even) {
+  background-color: var(--second-fone);
+}
