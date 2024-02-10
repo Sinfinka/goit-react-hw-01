@@ -1,5 +1,5 @@
 import userData from "../input-data/userData.json";
-import friendData from "./../input-data/friendData.json";
+import friends from "./../input-data/friends.json";
 import transactions from "./../input-data/transactions.json";
 import { Profile } from "./profile/Profile";
 import { FriendList } from "./friendList/FriendList";
@@ -9,7 +9,7 @@ export const App = () => {
   return (
     <>
       <Profile userData={userData} />
-      <FriendList friendData={friendData} />
+      <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
     </>
   );
